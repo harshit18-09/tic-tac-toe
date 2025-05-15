@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tic Tac Toe</title>
+  <script src="https://cdn.tailwindcss.com"></script> <!-- Tailwind CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gray-900 flex items-center justify-center min-h-screen text-white">
+
+  <div class="text-center">
+    <h1 class="text-4xl font-bold mb-6 text-blue-400">Tic Tac Toe</h1>
+
+    <div id="board" class="grid grid-cols-3 gap-4 w-72 mx-auto mb-6">
+      <!-- JS will inject 9 cells here -->
+    </div>
+
+    <p id="status" class="text-xl mb-4 text-yellow-300">Player X's turn</p>
+    <button onclick="resetGame()" class="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded">Restart Game</button>
+  </div>
+
+  <script src="script.js"></script> <!-- Game logic -->
+</body>
+</html>
